@@ -1,0 +1,37 @@
+@import "../../../styles.scss";
+.catergories {
+    background: secondary;
+    ul {
+        display: block;
+        font-size: 32px;
+        outline-style: solid;
+        outline-color: $highlights;
+        &:hover {
+            .header {
+                cursor: pointer;
+                background-color: $highlights;
+            }
+            li {
+                display: table
+            }
+        }
+    }
+    li {
+        display: inline-block;
+        font-size: 16px;
+        display: none;
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+}
