@@ -1,11 +1,38 @@
 @import "../../styles.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: "Heebo", sans-serif;
+}
+
+.landing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-color: $secondary;
+    .me {
+        width: 60%;
+        height: 80%;
+        background-color: aqua;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
 svg {
-    position: absolute;
-    top: 20%;
-    left: 70%;
-    width: 500px;
-    height: 200px;
-    transform: translate(-50%, -30%);
+    width: 100%;
+    height: auto;
 }
 
 .path {
@@ -52,23 +79,6 @@ svg {
     to {
         stroke-dashoffset: 0;
     }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main {
-    font-family: "Heebo", sans-serif;
-}
-
-.landing {
-    min-height: 100vh;
-    background-image: url("./Drawing.png");
-    background-size: cover;
-    padding: 0rem 5rem;
 }
 
 .intro {
