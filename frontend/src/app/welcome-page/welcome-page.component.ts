@@ -15,6 +15,9 @@ export class WelcomePageComponent implements OnInit {
     tl.to('.transition', { y: '-100%', durations: 1, delay: 0.5 })
     tl.to('.intro', { y: '-100%', durations: 1.5, }, "-=.3")
     tl.fromTo('.name', { opacity: 0 }, { opacity: 1, duration: 1 })
+    tl.fromTo('.my-image', {height:"0%"},{height:"80%" , duration:3.5}, "-=1" )
+    tl.fromTo('.my-image', {width:"100%"},{width:"80%" , duration:1})
+    tl.to('.CTA', { opacity: '1', durations: 1, })
   }
 
 }
